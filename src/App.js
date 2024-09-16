@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Signin from './pages/Signin';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Error from './pages/Error'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Sigin" element={<Signin />} />
+          <Route path='/*' element ={<Error/>}/>
         </Routes>
       <Footer/>
     </Router>
